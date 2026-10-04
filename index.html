@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BloxFruitGuide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🍎 BloxFruitGuide</div>
+  <nav>
+    <button data-page="home">Home</button>
+    <button data-page="fruits">Fruits</button>
+    <button data-page="guides">Guides</button>
+    <button data-page="accessories">Accessories</button>
+  </nav>
+</header>
+<main>
+<section id="home" class="page active">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">BLOX FRUITS GUIDE</p>
+      <h1>Become a Fruit Master.</h1>
+      <p class="hero-text">Explore fruits, compare types and prices, and discover useful game guides.</p>
+      <button class="primary" data-page="fruits">EXPLORE FRUITS →</button>
+    </div>
+    <div class="hero-fruit"><div class="fruit-orb">🍎</div></div>
+  </div>
+  <div class="stats">
+    <div><strong id="fruitCount">0</strong><span>Fruits</span></div>
+    <div><strong>4</strong><span>Types</span></div>
+    <div><strong>∞</strong><span>Guides</span></div>
+  </div>
+</section>
+<section id="fruits" class="page">
+  <div class="section-heading"><p class="eyebrow">DATABASE</p><h2>Fruit Collection</h2><p>Search and filter the fruit catalog.</p></div>
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Search fruits...">
+    <select id="typeFilter"><option value="all">All Types</option><option>Natural</option><option>Elemental</option><option>Beast</option><option>Special</option></select>
+    <select id="sort"><option value="name">Name</option><option value="priceHigh">Price: High → Low</option><option value="priceLow">Price: Low → High</option></select>
+  </div>
+  <div id="fruitGrid" class="fruit-grid"></div>
+</section>
+<section id="guides" class="page">
+  <div class="section-heading"><p class="eyebrow">GUIDES</p><h2>Game Guides</h2></div>
+  <div class="guide-grid">
+    <article>⚔️<h3>Combat Basics</h3><p>Learn useful combat and loadout basics.</p></article>
+    <article>🍎<h3>Fruit Basics</h3><p>Learn about fruit types and abilities.</p></article>
+    <article>🗺️<h3>Grinding Tips</h3><p>Useful ideas for planning your grind.</p></article>
+  </div>
+</section>
+<section id="accessories" class="page">
+  <div class="section-heading"><p class="eyebrow">LOADOUT</p><h2>Accessories</h2></div>
+  <div class="guide-grid">
+    <article>🗡️<h3>Weapons</h3><p>Keep your favorite weapons organized.</p></article>
+    <article>🛡️<h3>Gear</h3><p>Track useful equipment and accessories.</p></article>
+    <article>✨<h3>Abilities</h3><p>Keep important abilities easy to find.</p></article>
+  </div>
+</section>
+</main>
+<footer>BloxFruitGuide • Fan-made guide website</footer>
+<script src="script.js"></script>
+</body>
+</html>
